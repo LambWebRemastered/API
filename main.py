@@ -9,7 +9,7 @@ app = Flask(__name__)
 SITES_DIR = 'sites'
 os.makedirs(SITES_DIR, exist_ok=True)
 
-GITHUB_REPO = "LambWebRemaster/API"
+GITHUB_REPO = "LambWebRemastered/API"
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 
 def upload_to_github(filename, content):
