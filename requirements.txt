@@ -2,6 +2,5 @@ pip
 Flask
 requests
 PyGithub
-threading
 github
 time
