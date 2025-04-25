@@ -84,7 +84,7 @@ def search_domains():
         domain = site_filename.rsplit('.', 1)[0]
         if query.lower() in domain.lower():
             matching_domains.append(domain)
-    return jsonify({'query': query, 'matching_domains': matching_domains})
+    return jsonify({'q': query, 'matching_domains': matching_domains})
 
 @app.route('/search_by_owner', methods=['GET'])
 def search_by_owner():
