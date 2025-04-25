@@ -1,2 +1,4 @@
-flask
+pip
+Flask
 requests
+PyGithub
