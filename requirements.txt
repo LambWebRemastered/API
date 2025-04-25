@@ -1,6 +1,5 @@
 Flask
 requests
 PyGithub
-github
 pip
 aiohttp==3.7.4.post0
