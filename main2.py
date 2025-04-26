@@ -19,7 +19,7 @@ def upload_to_github(filename, content):
     g = Github(GITHUB_TOKEN)
     repo = g.get_repo(GITHUB_REPO)
     try:
-        contents = repo.get_contents(f"sites/{filename}")
+        contents = repo.get_contents(f"sites2/{filename}")
         repo.update_file(contents.path, f"Update {filename}", content, contents.sha)
     except:
         repo.create_file(f"sites/{filename}", f"Add {filename}", content)
